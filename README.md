@@ -51,7 +51,7 @@ Start the server
 
 ![App Screenshot](./img/gamedes1.png))
 
-![App Screenshot]([./img/game2.png))
+![App Screenshot](./img/game2.png))
 
 ![App Screenshot](./img/demo.png))
 
