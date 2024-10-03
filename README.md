@@ -49,11 +49,11 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/yukinime/ServerDiamond-Top-Up-Games-Voucher-PPOB/blob/main/img/gamedes1.png))
+![App Screenshot](./img/gamedes1.png))
 
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/yukinime/ServerDiamond-Top-Up-Games-Voucher-PPOB/blob/main/img/game2.png))
+![App Screenshot]([./img/game2.png))
 
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/yukinime/ServerDiamond-Top-Up-Games-Voucher-PPOB/blob/main/img/demo.png))
+![App Screenshot](./img/demo.png))
 
 
 ## Authors
