@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Pembayaran - Layanan Top Up Games #1 Indonesia</title>
+
+        <meta name="description" content="Serverdiamond merupakan website TopUp Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.
+">
+        <meta name="keywords" content="games">
+
+        <link rel="shortcut icon" href="/img/logo.jpeg">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/plugins/simplebar/css/simplebar.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/animate.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/icons.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/horizontal-menu.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/app-style.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/style-main.css">
+
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+        <style>
+            :root {
+                --warna: #1f2a36;
+                --warna_2: #141f2a;
+                --warna_3: #ffc107;
+                --warna_4: #0d47a1;
+            }
+            .content {
+                padding-top: 110px;
+                min-height: 446px;
+            }
+            .table-white tr th, .table-white tr td {
+                color: #fff;
+                border-color: #242f3a;
+            }
+            label {
+                font-weight: 500;
+                text-transform: none;
+            }
+            .col-form-label {
+                padding-top: calc(.375rem + 3px);
+            }
+            .card-tools {
+                float: right;
+                margin-top: -25px;
+            }
+            .cursor-pointer {
+                cursor: pointer;
+            }
+            .menu-user a {
+                padding: 10px 16px;
+                border-radius: 5px;
+            }
+            .menu-user a:hover {
+                background: var(--warna_2);
+            }
+            .menu-user a i {
+                font-size: 19px;
+                width: 20px;
+            }
+            .menu-user {
+                margin-bottom: 26px;
+            }
+            .daterangepicker td, .daterangepicker th {
+                color: #626262;
+            }
+            body, .circle-primary {
+                background: var(--warna);
+            }
+            .bg-footer {
+                background-color: var(--warna);
+            }
+            .bg-theme1, .bg-custom, .card {
+                background: var(--warna_2) !important;
+            }
+            .btn-topup, .back-to-top {
+                background: var(--warna_3);
+            }
+            .section {
+                background: var(--warna_2);
+            }
+            .radio-nominal + label, .radio-nominale + label {
+                background: var(--warna);  
+                border: none !important;
+            }
+            .radio-nominale:checked + label, .radio-nominal:checked + label {
+                background: var(--warna_3);
+                color: #fff;
+            }
+            .strip-primary {
+                background: #ffee00;
+            }
+            .btn-primary {
+                background: var(--warna_3) !important;
+                border-color: var(--warna_3) !important;
+            }
+            .sidenav {
+                background: var(--warna_2);
+            }
+            .radio-nominal:checked + label, .table-white tr th, .table-white tr td {
+                border-color: var(--warna);
+            }
+            .menu-utama div a {
+                margin: 0 4px;
+            }
+            .menu-utama div a:hover, .menu-utama div a.active {
+                background: var(--warna_3);
+                border-radius: 14px 4px;
+            }
+            .navbar-collapse {
+                background: var(--warna_2);
+            }
+            .menu-list {
+                list-style: none;
+                padding-left: 0;
+            }
+            .menu-list li a {
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px dashed var(--warna_3);
+                transition: .4s;
+            }
+            .menu-list li a:hover {
+                padding-left: 6px;
+            }
+        </style>
+
+        			    </head>
+    <body>
+        <div class="clearfix pt-5"></div>
+        <div class="pt-5 pb-5" style="min-height: 500px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="pt-3 pb-4">
+                            <h5>Cek Status Pesanan</h5>
+                            <span class="strip-primary"></span>
+                        </div>
+                        <div class="section">
+                            <div class="card-body">
+                                <form id="orderForm" role="form" class="mb-3" action="" method="POST">
+                                    <p class="text-white">No. Transaksi</p>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="order_id" class="form-control" required autocomplete="off">
+                                    </div>
+                                    <div class="text-right">
+                                        <button type="submit" name="submit" value="submit" class="btn btn-primary">Cek Pesanan</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+			
+            <footer id="aboutus" class="bg-footer">
+                <img src="https://serverdiamond.com/assets/images/waves2.png" alt="" width="100%">
+                <div style="background: var(--warna_2);margin-top: -4px;">
+                    <div class="pt-5 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3">
+                                    <img src="/img/logo.jpeg" height="40" alt="logo icon" class="mb-3">
+                                    <h5 class="mb-2">Serverdiamond</h5>
+                                    <p>Serverdiamond merupakan website TopUp Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.</p>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <h5 class="pb-2">Games Terpopuler</h5>
+                                    <div class="row">
+                                                                                <div class="col-4 p-2">
+                                            <a href="#">
+                                                <img src="https://serverdiamond.com/assets/images/games/1679399431_72f4869d138d1245ce2b.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                            </a>
+                                        </div>
+                                                                                <div class="col-4 p-2">
+                                            <a href="#">
+                                                <img src="https://serverdiamond.com/assets/images/games/1679312619_3286d8d18b9eeb02e930.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                            </a>
+                                        </div>
+                                                                                <div class="col-4 p-2">
+                                            <a href="#">
+                                                <img src="https://serverdiamond.com/assets/images/games/1679142641_6216c378bb933ca2f5cd.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                            </a>
+                                        </div>
+                                                                                <div class="col-4 p-2">
+                                            <a href="#">
+                                                <img src="https://serverdiamond.com/assets/images/games/1677990395_e4b62514fc7550b3f50c.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                            </a>
+                                        </div>
+                                                                                <div class="col-4 p-2">
+                                            <a href="#">
+                                                <img src="https://serverdiamond.com/assets/images/games/1654756296_4e7d9dbfb97766c245b3.png" alt="" width="100%" style="border-radius: 10px;">
+                                            </a>
+                                        </div>
+                                                                                <div class="col-4 p-2">
+                                            <a href="#">
+                                                <img src="https://serverdiamond.com/assets/images/games/1654754828_f5c27094968689c95f81.png" alt="" width="100%" style="border-radius: 10px;">
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <h5 class="pb-2">Halaman</h5>
+                                    <ul class="menu-list">
+                                        <li><a href="/">Halaman Utama</a></li>
+                                        <li><a href="#">Cek Pesanan</a></li>
+                                        <li><a href="/price.html">Daftar Harga</a></li>
+                                        <li><a href="#">Syarat & Ketentuan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-sm-3">
+                                    <h5 class="pb-2">Sosial Media Kami</h5>
+                                    <a href="https://instagram.com/#" style="font-size: 35px;">
+                                        <i class="fa fa-instagram pr-4"></i>
+                                    </a>
+                                    <a href="https://youtube.com/#" style="font-size: 35px;">
+                                        <i class="fa fa-youtube pr-4"></i>
+                                    </a>
+                                    <a href="https://facebook.com/#" style="font-size: 35px;">
+                                        <i class="fa fa-facebook pr-4"></i>
+                                    </a>
+                                    <a href="https://twitter.com/#" style="font-size: 35px;">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-theme1 text-center pb-4"> Copyright © 2024 Serverdiamond. All Rights Reserved </div>
+            </footer>
+        </div>
+
+        <a href="javaScript:void();" class="back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        
+<!-- Squareshop widget -->
+  <!-- SweetAlert library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Script to handle form submission -->
+  <script>
+      document.getElementById('orderForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent default form submission
+
+          // Show SweetAlert dialog
+          Swal.fire({
+             icon: "error",
+             title: "Maaf Pesanan Tidak Ditemukan!",
+            text: "Silahkan hubungi admin",
+            footer: '<a href="https://api.whatsapp.com/send/?phone=6281396937917&text=Halo+Admin&type=phone_number&app_absent=0" style="color: blue;">Contact Admin</a>'
+});
+      });
+  </script>
+<!-- /Squareshop widget -->        
+
+        <!--End wrapper-->
+        <!-- Bootstrap core JavaScript-->
+        <script src="https://serverdiamond.com/assets/js/jquery.min.js"></script>
+        <script src="https://serverdiamond.com/assets/js/popper.min.js"></script>
+        <script src="https://serverdiamond.com/assets/js/bootstrap.min.js"></script>
+        <!-- simplebar js -->
+        <script src="https://serverdiamond.com/assets/plugins/simplebar/js/simplebar.js"></script>
+        <!-- Custom scripts -->
+        <!--<script src="https://serverdiamond.com/assets/js/app-script.js"></script>-->
+        <script src="https://serverdiamond.com/assets/plugins/summernote/dist/summernote-bs4.min.js"></script>
+        <!--Select Plugins Js-->
+        <script src="https://serverdiamond.com/assets/plugins/select2/js/select2.min.js"></script>
+        <!--Data Tables js-->
+        <script src="https://serverdiamond.com/assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+        <script src="https://serverdiamond.com/assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+        <script>
+            // $(document).ready(function() {
+            //     $('#default-datatable').DataTable();
+            // });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "300px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <script>
+            
+        </script>
+        
+        			    </body>
+</html>

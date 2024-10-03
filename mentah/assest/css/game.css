@@ -1,0 +1,352 @@
+@import url('./home.css');
+
+.header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px 4px rgba(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 90%;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+}
+.col-md-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.circular-logo {
+    border-radius: 50%;
+  }
+
+.section-form_topup { margin: 6rem 0; }
+
+.section-form_topup > div > p { 
+    font-size: 11pt; 
+    margin-top: 1rem;
+}
+
+.game-description {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 6px 8px 0px rgba(0 0 0 / 0.2);
+    height: 30rem;
+}
+
+.section-form_topup img { 
+    border-radius: 10px; 
+    width: 100%;
+}
+
+fieldset { margin-bottom: 1rem; }
+
+.form-input {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 6px 8px 0px rgba(0 0 0 / 0.2);
+}
+
+.form-input > p {
+    font-size: 11pt;
+}
+
+.form-input > input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(0 0 0 / 0.2);
+}
+
+.nominal {
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 6px 4px rgba(0 0 0 / 0.2);
+    position: relative;
+    border-radius: 5px;
+}
+
+.nominal:hover {
+    background-color:  #0284c7;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.nominal > span {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nominal img { width: 25px; }
+
+.nominal > input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.nominal > input[type = radio]:checked ~ span::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 0 5px;
+    color: #fff;
+    background-color: #000;
+    padding: 3px;
+}
+
+.payment { display: grid; }
+
+.payment img { 
+    width: 100px;
+    display: block; 
+}
+
+.payment-method {
+    position: relative;
+    padding: .5rem;
+    box-shadow: 0 4px 6px 4px rgba(0 0 0 / 0.2);
+    margin: .5rem 0;
+    border-radius: 5px;
+}
+
+.payment-method:hover {
+    cursor: pointer;
+    background-color: #0284c7;
+    color: #fff;
+    transition-duration: .3s;
+}
+
+.payment-method > input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.payment-method > input[type = radio]:checked ~ span::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 0 5px;
+    color: #fff;
+    background-color: #000;
+    padding: 3px;
+}
+
+.form-input__price-section {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-order {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #0284c7;
+    color: #fff;
+    box-shadow: 0px 4px 6px 4px rgba(0 0 0 / 0.2);
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.btn-order:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease-out .3s;
+    cursor: pointer;
+}
+
+.confirmPaymentButton{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #0284c7;
+    color: #fff;
+    box-shadow: 0px 4px 6px 4px rgba(0 0 0 / 0.2);
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.confirmPaymentButton:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease-out .3s;
+    cursor: pointer;
+}
+
+/* Gaya untuk tabel hitung mundur */
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.bg-rose {
+    background-color: #9e0000 !important; /* Warna rose yang sesuai dengan kode Anda */
+    color: #fff;
+}
+
+
+
+@media (min-width: 768px) {
+            .img-fluid {
+                width: 100%; /* Atur lebar gambar agar memenuhi parent div */
+                height: auto; /* Agar gambar tetap proporsional saat diperbesar */
+            }
+        }
+
+@media screen and (max-width:640px) {
+    .game-container { 
+        max-width: 640px; 
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .mlbb-container { 
+        max-width: 640px; 
+        margin: 0 auto;
+    }
+
+    .apex-container { 
+        max-width: 640px; 
+        margin: 0 auto;
+    }
+
+    .grid-cols-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-cols-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nominal {
+        padding: 1rem .5rem;
+        box-shadow: 0px 4px 6px 4px rgba(0 0 0 / 0.2);
+        position: relative;
+        border-radius: 5px;
+        font-size: 10pt;
+    }
+
+    .form-input__price {
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    .form-input { padding: .5rem; }
+}
+
+@media screen and (min-width:640px) {
+    .game-container { 
+        max-width: 768px;
+        padding: 1rem; 
+        margin: 0 auto;
+    }
+
+    .mlbb-container { 
+        max-width: 768px; 
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .apex-container { 
+        max-width: 768px; 
+        margin: 0 auto;
+    }
+
+    .grid-cols-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-cols-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .game-description { height: 40rem; }
+
+}
+
+@media screen and (min-width:968px) {
+    .game-container { 
+        max-width: 1280px; 
+        padding: 0 4rem;
+    }
+
+    .mlbb-container { 
+        max-width: 1280px; 
+        padding: 0 4rem;
+        margin: 0 auto;
+        
+    }
+
+    .apex-container { 
+        max-width: 1280px; 
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+
+    .grid-cols-2 {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 10px;
+    }
+    
+    .game-description { height: 30rem; }
+}

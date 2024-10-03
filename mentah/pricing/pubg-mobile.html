@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Serverdiamond - Layanan Top Up Games #1 Indonesia</title>
+
+        <meta name="description" content="Serverdiamond merupakan website TopUp Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.
+">
+        <meta name="keywords" content="games">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Muhabeno Store Website Top Up Games Murah">
+        <meta name="keywords" content="web top up, website top up games, top up murah, top up mobile legends murah, jasa joki murah, joki mobile legends murah">
+        <meta name="author" content="digitalkios">
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assest/css/game.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/85fafe1776.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="/img/logo.jpeg">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/plugins/simplebar/css/simplebar.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/animate.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/icons.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/horizontal-menu.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/app-style.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/style-main.css">
+
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+        
+
+        <style>
+            :root {
+                --warna: #1f2a36;
+                --warna_2: #141f2a;
+                --warna_3: #ffc107;
+                --warna_4: #0d47a1;
+            }
+            .content {
+                padding-top: 110px;
+                min-height: 446px;
+            }
+            .table-white tr th, .table-white tr td {
+                color: #fff;
+                border-color: #242f3a;
+            }
+            label {
+                font-weight: 500;
+                text-transform: none;
+            }
+            .col-form-label {
+                padding-top: calc(.375rem + 3px);
+            }
+            .card-tools {
+                float: right;
+                margin-top: -25px;
+            }
+            .cursor-pointer {
+                cursor: pointer;
+            }
+            .menu-user a {
+                padding: 10px 16px;
+                border-radius: 5px;
+            }
+            .menu-user a:hover {
+                background: var(--warna_2);
+            }
+            .menu-user a i {
+                font-size: 19px;
+                width: 20px;
+            }
+            .menu-user {
+                margin-bottom: 26px;
+            }
+            .daterangepicker td, .daterangepicker th {
+                color: #626262;
+            }
+            body, .circle-primary {
+                background: var(--warna);
+            }
+            .bg-footer {
+                background-color: var(--warna);
+            }
+            .bg-theme1, .bg-custom, .card {
+                background: var(--warna_2) !important;
+            }
+            .btn-topup, .back-to-top {
+                background: var(--warna_3);
+            }
+            .section {
+                background: var(--warna_2);
+            }
+            .radio-nominal + label, .radio-nominale + label {
+                background: var(--warna);  
+                border: none !important;
+            }
+            .radio-nominale:checked + label, .radio-nominal:checked + label {
+                background: var(--warna_3);
+                color: #fff;
+            }
+            .strip-primary {
+                background: #ffee00;
+            }
+            .btn-primary {
+                background: var(--warna_3) !important;
+                border-color: var(--warna_3) !important;
+            }
+            .sidenav {
+                background: var(--warna_2);
+            }
+            .radio-nominal:checked + label, .table-white tr th, .table-white tr td {
+                border-color: var(--warna);
+            }
+            .menu-utama div a {
+                margin: 0 4px;
+            }
+            .menu-utama div a:hover, .menu-utama div a.active {
+                background: var(--warna_3);
+                border-radius: 14px 4px;
+            }
+            .navbar-collapse {
+                background: var(--warna_2);
+            }
+            .menu-list {
+                list-style: none;
+                padding-left: 0;
+            }
+            .menu-list li a {
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px dashed var(--warna_3);
+                transition: .4s;
+            }
+            .menu-list li a:hover {
+                padding-left: 6px;
+            }
+
+        </style>
+
+                        </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm bg-custom">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="/img/logo.jpeg" width="50" alt="logo icon" class="rounded">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse menu-utama" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-item nav-link active" href="/">Home</a>
+                                <a class="nav-item nav-link " href="#">Cek Pesanan</a>
+                                <a class="nav-item nav-link " href="/price.html">Daftar Harga</a>
+                                <a class="nav-item nav-link " href="/pembayaran.html">Metode Pembayaran</a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- TOP UP GAME -->
+
+    <main class="game-container">
+        <section class="grid-cols-2 section-form_topup">
+            <div class="game-description">
+                <img src="../img/produk/pubg-cover.jpg" alt="Mobile Legends">
+                <p>Top Up UC PUBG Mobile Murah. Cukup Masukan User ID Anda. Maka UC Akan Langsung Terisi.</p><br>
+                <b>Perhatian !</b><br>
+                <small><b>Mohon cek id dengan benar, jika ada kesalahan input id. Dan ketika dicek pada sistem diamonds dinyatakan masuk. Kami tidak bertanggung jawab.</b></small>
+            </div>
+            <div>
+                <form action="">
+                    <fieldset class="form-input">
+                        <h4><span>1.</span> Masukan User ID</h4>
+                        <input class="form-input_ff" type="number" name="user_id" id="" required placeholder="Masukan User ID">
+                        <p>Untuk mengetahui User ID Anda, silahkan klik menu profile dibagian kiri atas pada menu utama game. User ID akan terlihat dibagian bawah Nama karakter game Anda. Silahkan masukan User ID Anda untuk menyelesaikan transaksi. <b>Contoh: 12345678</b>.</p>
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h4><span>2.</span> Masukan Nickname (Opsional)</h4>
+                        <input type="text" name="user_name" id="user_name" placeholder="Masukan Nickname">
+                    </fieldset>
+
+                    <fieldset class="form-input">
+                        <h4><span>3.</span> Pilih Nominal Top Up</h4>
+                        <div class="grid grid-cols-3 ">
+                            <label class="nominal" data-price="200.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="1800 UC Rp 200.000" >
+                                <span>
+                                    1800
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="300.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="8600 UC Rp 300.000" >
+                                <span>
+                                    8600
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="400.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="13700 UC Rp 400.000" >
+                                <span>
+                                    13700
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="500.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="17000 UC Rp 500.000" >
+                                <span>
+                                    17000
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="700.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="22500 UC Rp 700.000" >
+                                <span>
+                                    22500
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="1.000.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="35000 UC Rp 1.000.000" >
+                                <span>
+                                    35000
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <!-- <label class="nominal" data-price="25.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="125 UC Rp 25.000" >
+                                <span>
+                                    125
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="30.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="150 UC Rp 30.000" >
+                                <span>
+                                    150
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="40.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="200 UC Rp 40.000" >
+                                <span>
+                                    200
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+
+                            <label class="nominal" data-price="43.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="210 UC Rp 43.000" >
+                                <span>
+                                    210
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="49.900"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="250 UC Rp 49.900" >
+                                <span>
+                                    250
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="59.900"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="300 UC Rp 59.000" >
+                                <span>
+                                    300
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="69.900"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="350 UC Rp 69.000" >
+                                <span>
+                                    350
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="95.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="500 UC Rp 95.000" >
+                                <span>
+                                    500
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="135.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="700 UC Rp 135.000" >
+                                <span>
+                                    700
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="142.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="5038 UC Rp 142.000" >
+                                <span>
+                                    750
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="185.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="1000 UC Rp 185.000" >
+                                <span>
+                                    1000
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="235.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="1250 UC Rp 235.000" >
+                                <span>
+                                    1250
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="281.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="1500 UC Rp 281.000" >
+                                <span>
+                                    1500
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="327.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="1750 UC Rp 327.000" >
+                                <span>
+                                    1750
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label>
+                            <label class="nominal" data-price="471.000"  style="color: #ffc107;">
+                                <input type="radio" name="item_qty" required value="2500 UC Rp 471.000" >
+                                <span>
+                                    2500
+                                    <img src="../img/produk/PUBGM_UC.png" alt="PUBGM UC">
+                                </span>
+                            </label> -->
+
+                        </div>
+                    </fieldset>
+
+                        <fieldset class="form-input">
+                        <h4><span>4.</span> Pilih Metode Pembayaran</h4>
+                        <div class="payment">
+                            <!-- <label class="payment-method" style="color: #ffc107;">
+                                <input type="radio" name="payment_method" required value="Mandiri : 1140027506420 A/N : DENSI">
+                                <img src="../img/produk/mandiri.jpg" alt="">
+                                <span><small>Bayar dengan <b>BANK MANDIRI</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label> -->
+
+                            <label class="payment-method" style="color: #ffc107;">
+                                <input type="radio" name="payment_method" required value="DANA : 083193927299 A/N : SUJANA">
+                                <img src="../img/produk/dana.jpg" alt="">
+                                <span><small>Bayar dengan <b>DANA</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method" style="color: #ffc107;">
+                                <input type="radio" name="payment_method" required value="OVO : 085768969529 A/N : SUJANA">
+                                <img src="../img/produk/ovo.png" alt="">
+                                <span><small>Bayar dengan <b>OVO</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <label class="payment-method" style="color: #ffc107;">
+                                <input type="radio" name="payment_method" required value="BRI : 034201016368535 A/N : SAUANA">
+                                <img src="../img/produk/bri.jpg" alt="">
+                                <span><small>Bayar dengan <b> BANK BRI</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label>
+
+                            <!-- <label class="payment-method" style="color: #ffc107;">
+                                <input type="radio" name="payment_method" required value="GO-PAY : 085788043517 A/N Dika Purnama Sari">
+                                <img src="../img/produk/gopay.jpg" alt="">
+                                <span><small>Bayar dengan <b>GO-PAY</b></small></span>
+                                <div class="form-input__price-section" style="display: none;">
+                                    <small>Harga</small> 
+                                    <div>Rp <span class="form-input__price"></span></div>
+                                </div>
+                            </label> -->
+                        </div>
+                    </fieldset>
+                    <button class="btn-order">Pesan Sekarang</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="aboutus" class="bg-footer">
+        <img src="https://serverdiamond.com/assets/images/waves2.png" alt="" width="100%">
+        <div style="background: var(--warna_2);margin-top: -4px;">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3">
+                            <img src="/img/logo.jpeg" height="40" alt="logo icon" class="mb-3">
+                            <h5 class="mb-2">Serverdiamond</h5>
+                            <p>Serverdiamond merupakan website TopUp Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h5 class="pb-2">Games Terpopuler</h5>
+                            <div class="row">
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1679399431_72f4869d138d1245ce2b.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1679312619_3286d8d18b9eeb02e930.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1679142641_6216c378bb933ca2f5cd.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1677990395_e4b62514fc7550b3f50c.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1654756296_4e7d9dbfb97766c245b3.png" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1654754828_f5c27094968689c95f81.png" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h5 class="pb-2">Halaman</h5>
+                            <ul class="menu-list">
+                                <li><a href="/">Halaman Utama</a></li>
+                                <li><a href="#">Cek Pesanan</a></li>
+                                <li><a href="/price.html">Daftar Harga</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-3">
+                            <h5 class="pb-2">Sosial Media Kami</h5>
+                            <a href="https://instagram.com/#" style="font-size: 35px;">
+                                <i class="fa fa-instagram pr-4"></i>
+                            </a>
+                            <a href="https://youtube.com/#" style="font-size: 35px;">
+                                <i class="fa fa-youtube pr-4"></i>
+                            </a>
+                            <a href="https://facebook.com/#" style="font-size: 35px;">
+                                <i class="fa fa-facebook pr-4"></i>
+                            </a>
+                            <a href="https://twitter.com/#" style="font-size: 35px;">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-theme1 text-center pb-4"> Copyright © 2024 Serverdiamond. All Rights Reserved </div>
+    </footer>
+
+    <script src="../dist/css/sweetalert2.all.min.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/order.js"></script>
+    <script src="../js/key.js"></script>
+</body>
+</html>

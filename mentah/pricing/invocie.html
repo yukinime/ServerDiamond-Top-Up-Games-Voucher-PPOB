@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Serverdiamond - Layanan Top Up Games #1 Indonesia</title>
+
+        <meta name="description" content="Serverdiamond merupakan website TopUp Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.
+">
+        <meta name="keywords" content="games">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Muhabeno Store Website Top Up Games Murah">
+        <meta name="keywords" content="web top up, website top up games, top up murah, top up mobile legends murah, jasa joki murah, joki mobile legends murah">
+        <meta name="author" content="digitalkios">
+        <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../assest/css/game.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/85fafe1776.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="/img/logo.jpeg">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/plugins/simplebar/css/simplebar.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/animate.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/icons.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/horizontal-menu.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/app-style.css">
+        <link rel="stylesheet" href="https://serverdiamond.com/assets/css/style-main.css">
+
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+        
+
+        <style>
+            :root {
+                --warna: #1f2a36;
+                --warna_2: #141f2a;
+                --warna_3: #ffc107;
+                --warna_4: #0d47a1;
+            }
+            .content {
+                padding-top: 110px;
+                min-height: 446px;
+            }
+            .table-white tr th, .table-white tr td {
+                color: #fff;
+                border-color: #242f3a;
+            }
+            label {
+                font-weight: 500;
+                text-transform: none;
+            }
+            .col-form-label {
+                padding-top: calc(.375rem + 3px);
+            }
+            .card-tools {
+                float: right;
+                margin-top: -25px;
+            }
+            .cursor-pointer {
+                cursor: pointer;
+            }
+            .menu-user a {
+                padding: 10px 16px;
+                border-radius: 5px;
+            }
+            .menu-user a:hover {
+                background: var(--warna_2);
+            }
+            .menu-user a i {
+                font-size: 19px;
+                width: 20px;
+            }
+            .menu-user {
+                margin-bottom: 26px;
+            }
+            .daterangepicker td, .daterangepicker th {
+                color: #626262;
+            }
+            body, .circle-primary {
+                background: var(--warna);
+            }
+            .bg-footer {
+                background-color: var(--warna);
+            }
+            .bg-theme1, .bg-custom, .card {
+                background: var(--warna_2) !important;
+            }
+            .btn-topup, .back-to-top {
+                background: var(--warna_3);
+            }
+            .section {
+                background: var(--warna_2);
+            }
+            .radio-nominal + label, .radio-nominale + label {
+                background: var(--warna);  
+                border: none !important;
+            }
+            .radio-nominale:checked + label, .radio-nominal:checked + label {
+                background: var(--warna_3);
+                color: #fff;
+            }
+            .strip-primary {
+                background: #ffee00;
+            }
+            .btn-primary {
+                background: var(--warna_3) !important;
+                border-color: var(--warna_3) !important;
+            }
+            .sidenav {
+                background: var(--warna_2);
+            }
+            .radio-nominal:checked + label, .table-white tr th, .table-white tr td {
+                border-color: var(--warna);
+            }
+            .menu-utama div a {
+                margin: 0 4px;
+            }
+            .menu-utama div a:hover, .menu-utama div a.active {
+                background: var(--warna_3);
+                border-radius: 14px 4px;
+            }
+            .navbar-collapse {
+                background: var(--warna_2);
+            }
+            .menu-list {
+                list-style: none;
+                padding-left: 0;
+            }
+            .menu-list li a {
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px dashed var(--warna_3);
+                transition: .4s;
+            }
+            .menu-list li a:hover {
+                padding-left: 6px;
+            }
+
+        </style>
+
+                        </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm bg-custom">
+                    <div class="container">
+                        <a class="navbar-brand" href="/">
+                            <img src="/img/logo.jpeg" width="50" alt="logo icon" class="rounded">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse menu-utama" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-item nav-link active" href="#">Home</a>
+                                <a class="nav-item nav-link " href="/pricing/cekpesan.html">Cek Pesanan</a>
+                                <a class="nav-item nav-link " href="/price.html">Daftar Harga</a>
+                                <a class="nav-item nav-link " href="/pembayaran.html">Metode Pembayaran</a>
+                                
+                                                                                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container mt-3 d-flex flex-column align-items-center">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-warning text-center">Terimakasih!</h1>
+                <br>
+                <p class="text-white">Silakan selesaikan pembayaran.</p>
+                <p class="text-white">Pesanan Anda <span class="text-danger">TRXFD8C1B0DFCE7F2695975</span> Sedang menunggu pembayaran sebelum dikirim.</p>
+                <!-- Additional content goes here -->
+            </div>
+            <div class="col-md-4 text-center">
+                <table class="table table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="bg-rose text-center text-white">Order Expiration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pesanan ini akan kedaluwarsa pada</td>
+                        <td id="countdownTimer" class="text-center text-danger">15:00</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                             <td><b><span id="inputNominal" class="text-success"></b></span></td>
+                            <td class="text-center text-warning">Unpaid</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="container mt-3 d-flex flex-column align-items-center">
+            <div class="col-md-8">
+                <div id="transactionDetails">
+                    <h4>Transaction Details</h4>
+                    User ID : <span id="userId" class="text-warning"></span><br>
+                    Nickname : <span id="userName" class="text-warning"></span><br><br>
+                    <b>Lakukan Pembayaran <br></b>
+                    <span id="inputNominal" class="text-success"></span><br>
+                    Transfer Ke Rekening :<br><br>
+                    <p1><b><span id="paymentMethod" class="text-warning"></span></b></p1>
+                    
+                    <!-- Tambahkan tombol copy text -->
+                    <button class="copy-button" onclick="copyText()"><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+        
+            <div class="col-md-5 mt-4 d-flex flex-column align-items-center">
+                <h3 class="text-white text-center">Lebih Praktis Bayar Pake QRIS </h3>
+                <p class="text-white">Silahkan Scan</p>
+                <img src="../img/QRIS.png" class="img-fluid" alt="Mobile Legends">
+                <p>Lakukan Pembayaran Sesuai Nominal Harga Diatas</p><br>
+                <button id="confirmPaymentButton" class="confirmPaymentButton">Konfirmasi Pembayaran</button>
+
+                
+
+<div id="loading" style="display: none;">
+    <!-- Konten loading di sini -->
+    <p>Loading...</p>
+</div>
+
+<div id="mainContent" style="display: none;">
+    <!-- Konten utama yang akan ditampilkan setelah proses loading selesai -->
+    <p>Konten Utama</p>
+</div>
+                <!-- Additional content goes here -->
+            </div>
+        </div>
+    </main>
+<br/>
+<br/>
+
+    <footer id="aboutus" class="bg-footer">
+        <img src="https://serverdiamond.com/assets/images/waves2.png" alt="" width="100%">
+        <div style="background: var(--warna_2);margin-top: -4px;">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3">
+                            <img src="/img/logo.jpeg" height="40" alt="logo icon" class="mb-3">
+                            <h5 class="mb-2">Serverdiamond</h5>
+                            <p>Serverdiamond merupakan website TopUp Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h5 class="pb-2">Games Terpopuler</h5>
+                            <div class="row">
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1679399431_72f4869d138d1245ce2b.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1679312619_3286d8d18b9eeb02e930.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1679142641_6216c378bb933ca2f5cd.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1677990395_e4b62514fc7550b3f50c.jpg" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1654756296_4e7d9dbfb97766c245b3.png" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                        <div class="col-4 p-2">
+                                    <a href="#">
+                                        <img src="https://serverdiamond.com/assets/images/games/1654754828_f5c27094968689c95f81.png" alt="" width="100%" style="border-radius: 10px;">
+                                    </a>
+                                </div>
+                                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h5 class="pb-2">Halaman</h5>
+                            <ul class="menu-list">
+                                <li><a href="#">Halaman Utama</a></li>
+                                <li><a href="#">Cek Pesanan</a></li>
+                                <li><a href="#">Daftar Harga</a></li>
+                                <li><a href="#">Syarat & Ketentuan</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-3">
+                            <h5 class="pb-2">Sosial Media Kami</h5>
+                            <a href="https://instagram.com/#" style="font-size: 35px;">
+                                <i class="fa fa-instagram pr-4"></i>
+                            </a>
+                            <a href="https://youtube.com/#" style="font-size: 35px;">
+                                <i class="fa fa-youtube pr-4"></i>
+                            </a>
+                            <a href="https://facebook.com/#" style="font-size: 35px;">
+                                <i class="fa fa-facebook pr-4"></i>
+                            </a>
+                            <a href="https://twitter.com/#" style="font-size: 35px;">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-theme1 text-center pb-4"> Copyright © 2024 Serverdiamond. All Rights Reserved </div>
+    </footer>
+    <script>
+        function copyText() {
+            // Seleksi teks yang ingin disalin
+            var textToCopy = document.getElementById("paymentMethod");
+            var range = document.createRange();
+            range.selectNode(textToCopy);
+            window.getSelection().removeAllRanges(); // Clear existing selection
+            window.getSelection().addRange(range);
+
+            // Lakukan tindakan salin
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'Berhasil disalin!' : 'Gagal disalin. Coba secara manual.';
+                alert(msg);
+            } catch (err) {
+                console.error('Gagal menyalin: ', err);
+            }
+
+            // Hapus seleksi teks setelah disalin
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Waktu awal: 15 menit (dalam detik)
+    let timeLeft = 15 * 60;
+
+    // Mendapatkan elemen yang menampilkan waktu mundur
+    const countdownTimer = document.getElementById('countdownTimer');
+
+    // Fungsi untuk memperbarui waktu mundur setiap detik
+    function updateCountdown() {
+        const minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+
+        // Menambahkan leading zero jika detik kurang dari 10
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        // Memperbarui teks pada elemen countdownTimer
+        countdownTimer.textContent = `${minutes}:${seconds}`;
+
+        // Mengurangi waktu mundur setiap detik
+        if (timeLeft > 0) {
+            timeLeft--;
+            setTimeout(updateCountdown, 1000); // Memanggil fungsi ini lagi setiap 1 detik
+        } else {
+            countdownTimer.textContent = 'Expired'; // Pesan saat waktu habis
+        }
+    }
+
+    // Memanggil fungsi pertama kali
+    updateCountdown();
+});
+
+</script>
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    // Mengambil data dari localStorage
+    const userId = localStorage.getItem('userId');
+    const userName = localStorage.getItem('userName');
+    const inputNominal = localStorage.getItem('inputNominal');
+    const paymentMethod = localStorage.getItem('paymentMethod');
+
+    // Menampilkan data di dalam elemen dengan ID yang sesuai
+    document.getElementById('userId').textContent = userId;
+    document.getElementById('userName').textContent = userName;
+    document.getElementById('inputNominal').textContent = inputNominal;
+    document.getElementById('paymentMethod').textContent = paymentMethod;
+    
+});
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Mendapatkan elemen tombol konfirmasi pembayaran
+    const confirmPaymentButton = document.getElementById('confirmPaymentButton');
+
+    // Data yang akan digunakan dalam pesan WhatsApp
+    const userId = localStorage.getItem('userId');
+    const userName = localStorage.getItem('userName');
+    const inputNominal = localStorage.getItem('inputNominal');
+    const paymentMethod = localStorage.getItem('paymentMethod');
+
+    // Fungsi untuk membuka pesan WhatsApp dengan pesan yang ditentukan
+    function openWhatsApp() {
+        const whatsappURL = `https://api.whatsapp.com/send?phone=6281396937917&text=*Halo%20Admin,%20Saya%20Mau%20Konfirmasi%20Bukti%20Pembayaran*.%0A%0ADetail%20Pesanan%20%3A%0A%0AUser%20ID%20%3A%20${userId}%0ANickname%20%3A%20${userName}%0AJumlah%20Pembelian%20%3A%20${inputNominal}%0APembayaran%20%3A%20${paymentMethod}%0A*Berikut Bukti Screenshot Transfer Saya Sesuai Harga Pada Nomor Atau Rekening Diatas.*%0A%0AOrder Muhabeno Store`;
+
+        // Buka pesan WhatsApp pada tab/window baru
+        window.open(whatsappURL);
+    }
+
+    // Event listener untuk tombol ketika diklik
+    confirmPaymentButton.addEventListener('click', function() {
+        openWhatsApp(); // Memanggil fungsi untuk membuka pesan WhatsApp
+    });
+});
+
+</script>
+
+    <script src="../dist/css/sweetalert2.all.min.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/order.js"></script>
+    <script src="../js/key.js"></script>
+
+     
+
+</body>
+</html>
