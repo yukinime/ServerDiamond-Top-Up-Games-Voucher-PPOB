@@ -1,4 +1,4 @@
-![alt text](https://github.com/yukinime/ServerDiamond-Top-Up-Games-Voucher-PPOB/blob/main/img/gamedes1.png?raw=true)
+![alt text](https://github.com/yukinime/ServerDiamond-Top-Up-Games-Voucher-PPOB/blob/main/img/Blue%20and%20Pink%20Modern%20Mobile%20Apps%20Presentation.png?raw=true)
 
 #Selamat datang di ServerDiamond! 🌟
 
