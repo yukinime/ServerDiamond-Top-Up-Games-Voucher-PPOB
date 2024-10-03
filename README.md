@@ -1,5 +1,3 @@
-ServerDiamond
-
 Selamat datang di ServerDiamond! 🌟
 
 ServerDiamond adalah platform penyedia layanan top up untuk berbagai game, voucher, dan PPOB. Kami menghadirkan kemudahan bagi pengguna untuk melakukan transaksi dengan cepat dan aman.
