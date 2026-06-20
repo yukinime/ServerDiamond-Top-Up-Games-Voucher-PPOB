@@ -5,8 +5,8 @@ const cors = require('cors');
 
 const app = express();
 const port = 3000;
-const TELEGRAM_BOT_TOKEN = '6981434953:AAGjBoMGI597J9rZX73W0C8NFEB010_6Qmc';
-const TELEGRAM_CHAT_ID = '7492654527'; // Ganti dengan chat ID admin
+const TELEGRAM_BOT_TOKEN = '8741366924:AAGbraN9PJQPLta5hnAcFWNYTPrYRbLmlXI';
+const TELEGRAM_CHAT_ID = '7269190670'; // Ganti dengan chat ID admin
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
